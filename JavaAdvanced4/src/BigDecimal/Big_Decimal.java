@@ -12,11 +12,11 @@ public class Big_Decimal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        //inserisco primo numero
+
         System.out.println("Inserisci 1' numero con la virgola: ");
         BigDecimal num1 = new BigDecimal(scanner.nextLine());
 
-        //inserisco secondo numero
+
         System.out.println("Inserisci 2' numero con la virgola: ");
         BigDecimal num2 = new BigDecimal(scanner.nextLine());
 
@@ -34,7 +34,7 @@ public class Big_Decimal {
         while (true) {
             try {
                 result = operazione.calcola(num1, num2);
-                break; // Se l'operazione va a buon fine, esci dal ciclo
+                break; // Se l'operazione va a buon fine, esco dal ciclo
             } catch (ArithmeticException e) {
                 System.out.println("Errore: " + e.getMessage() + ". Inserisci un altro numero per evitare la divisione per zero.");
                 // Chiedo di nuovo il secondo numero
